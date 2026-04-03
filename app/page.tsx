@@ -251,21 +251,24 @@ export default function Home() {
         <p style={{fontSize: '12px', color: '#85B7EB', marginTop: '12px'}}>Only <span style={{color: '#F0997B', fontWeight: 500}}>53 spots remaining</span> · No credit card needed</p>
       </section>
 
-      <footer style={{background: '#042C53', padding: '20px 40px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', minWidth: 0}}>
-        <span style={{fontSize: '16px', fontWeight: 500, color: '#E6F1FB', letterSpacing: '-0.3px', whiteSpace: 'nowrap'}}>ionic</span>
-        <div style={{display: 'flex', gap: '20px'}}>
-          <div style={{display: 'flex', alignItems: 'center', gap: '8px', marginRight: '16px'}}>
-  <div style={{display: 'flex', alignItems: 'center', gap: '6px', background: 'rgba(255,255,255,0.08)', border: '0.5px solid rgba(255,255,255,0.15)', borderRadius: '8px', padding: '5px 12px'}}>
-    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#85B7EB" strokeWidth="1.5" strokeLinecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg>
-    <span style={{fontSize: '12px', color: '#85B7EB'}}>iOS & Android</span>
-    <span style={{fontSize: '10px', background: '#D85A30', color: '#FAECE7', padding: '1px 6px', borderRadius: '4px', fontWeight: 500}}>Soon</span>
+      <footer style={{background: '#042C53', padding: '20px 40px', display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
+  <div style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
+    <svg width="20" height="20" viewBox="0 0 24 24"><circle cx="9" cy="12" r="7" fill="#E6F1FB" stroke="#185FA5" strokeWidth="1.5"/><circle cx="15" cy="12" r="7" fill="#FAECE7" stroke="#993C1D" strokeWidth="1.5"/><ellipse cx="12" cy="12" rx="2.5" ry="5" fill="#185FA5" fillOpacity="0.22"/></svg>
+    <span style={{fontSize: '14px', fontWeight: 500, color: '#E6F1FB', letterSpacing: '-0.3px', whiteSpace: 'nowrap'}}>ionic</span>
   </div>
-</div>
-<a href="/privacy" style={{fontSize: '13px', color: '#85B7EB', textDecoration: 'none'}}>Privacy</a>
-<a href="/terms" style={{fontSize: '13px', color: '#85B7EB', textDecoration: 'none'}}>Terms</a>
-<a href="/contact" style={{fontSize: '13px', color: '#85B7EB', textDecoration: 'none'}}>Contact</a>
-        </div>
-      </footer>
+  <div style={{display: 'flex', alignItems: 'center', gap: '8px', marginRight: '16px'}}>
+    <div style={{display: 'flex', alignItems: 'center', gap: '6px', background: 'rgba(255,255,255,0.08)', border: '0.5px solid rgba(255,255,255,0.15)', borderRadius: '8px', padding: '5px 12px'}}>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#85B7EB" strokeWidth="1.5" strokeLinecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg>
+      <span style={{fontSize: '12px', color: '#85B7EB'}}>iOS & Android</span>
+      <span style={{fontSize: '10px', background: '#D85A30', color: '#FAECE7', padding: '1px 6px', borderRadius: '4px', fontWeight: 500}}>Soon</span>
+    </div>
+  </div>
+  <div style={{display: 'flex', gap: '24px'}}>
+    <a href="/privacy" style={{fontSize: '13px', color: '#85B7EB', textDecoration: 'none'}}>Privacy</a>
+    <a href="/terms" style={{fontSize: '13px', color: '#85B7EB', textDecoration: 'none'}}>Terms</a>
+    <a href="/contact" style={{fontSize: '13px', color: '#85B7EB', textDecoration: 'none'}}>Contact</a>
+  </div>
+</footer>
 
     </main>
   )
