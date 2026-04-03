@@ -9,9 +9,10 @@ export default function Contact() {
     <main style={{fontFamily: 'system-ui, sans-serif', minHeight: '100vh', background: '#F8FAFC'}}>
       <nav style={{background: '#fff', borderBottom: '0.5px solid #E6F1FB', padding: '0 40px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
         <a href="/" style={{display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none', width: 'fit-content'}}>
-          <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="9" cy="12" r="7" fill="#E6F1FB" stroke="#185FA5" strokeWidth="1.5"/><circle cx="15" cy="12" r="7" fill="#FAECE7" stroke="#993C1D" strokeWidth="1.5"/><ellipse cx="12" cy="12" rx="2.5" ry="5" fill="#185FA5" fillOpacity="0.22"/></svg>
-          <span style={{fontSize: '18px', fontWeight: 500, color: '#042C53', letterSpacing: '-0.5px'}}>ionic</span>
+          <svg width="28" height="28" viewBox="0 0 24 24"><circle cx="9" cy="12" r="7" fill="#E6F1FB" stroke="#185FA5" strokeWidth="1.5"/><circle cx="15" cy="12" r="7" fill="#FAECE7" stroke="#993C1D" strokeWidth="1.5"/><ellipse cx="12" cy="12" rx="2.5" ry="5" fill="#185FA5" fillOpacity="0.22"/></svg>
+          <span style={{fontSize: '22px', fontWeight: 500, color: '#042C53', letterSpacing: '-0.5px'}}>ionic</span>
         </a>
+        <a href="/signup" style={{fontSize: '13px', fontWeight: 500, padding: '8px 18px', borderRadius: '8px', background: '#185FA5', color: '#E6F1FB', textDecoration: 'none'}}>Join free</a>
       </nav>
       <div style={{maxWidth: '560px', margin: '0 auto', padding: '60px 40px'}}>
         <h1 style={{fontSize: '32px', fontWeight: 500, color: '#042C53', marginBottom: '8px', letterSpacing: '-0.5px'}}>Get in touch</h1>
@@ -44,9 +45,9 @@ export default function Contact() {
 
         <div style={{marginTop: '40px', display: 'flex', flexDirection: 'column', gap: '12px'}}>
           {[
-            {label: 'General enquiries', value: 'hello@ionicapp.co'},
-            {label: 'Privacy & data', value: 'privacy@ionicapp.co'},
-            {label: 'Legal', value: 'legal@ionicapp.co'},
+            {label: 'General enquiries', value: 'ionicmatch@gmail.com'},
+            {label: 'Privacy & data', value: 'ionicmatch@gmail.com'},
+            {label: 'Legal', value: 'ionicmatch@gmail.com'},
           ].map(({label, value}) => (
             <div key={label} style={{display: 'flex', justifyContent: 'space-between', padding: '12px 16px', background: '#fff', borderRadius: '8px', border: '0.5px solid #E6F1FB'}}>
               <span style={{fontSize: '13px', color: '#85B7EB'}}>{label}</span>
@@ -55,6 +56,17 @@ export default function Contact() {
           ))}
         </div>
       </div>
+      <footer style={{background: '#042C53', padding: '20px 40px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '60px'}}>
+        <a href="/" style={{display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none', width: 'fit-content'}}>
+          <svg width="20" height="20" viewBox="0 0 24 24"><circle cx="9" cy="12" r="7" fill="#E6F1FB" stroke="#185FA5" strokeWidth="1.5"/><circle cx="15" cy="12" r="7" fill="#FAECE7" stroke="#993C1D" strokeWidth="1.5"/><ellipse cx="12" cy="12" rx="2.5" ry="5" fill="#185FA5" fillOpacity="0.22"/></svg>
+          <span style={{fontSize: '14px', fontWeight: 500, color: '#E6F1FB', letterSpacing: '-0.3px', whiteSpace: 'nowrap'}}>ionic</span>
+        </a>
+        <div style={{display: 'flex', gap: '24px'}}>
+          <a href="/privacy" style={{fontSize: '13px', color: '#85B7EB', textDecoration: 'none'}}>Privacy</a>
+          <a href="/terms" style={{fontSize: '13px', color: '#85B7EB', textDecoration: 'none'}}>Terms</a>
+          <a href="/contact" style={{fontSize: '13px', color: '#85B7EB', textDecoration: 'none'}}>Contact</a>
+        </div>
+      </footer>
     </main>
   )
 }
