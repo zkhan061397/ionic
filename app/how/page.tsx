@@ -7,12 +7,12 @@ export default function How() {
       {/* Nav */}
       <nav style={{background: '#fff', borderBottom: '0.5px solid #E6F1FB', padding: '0 40px', height: '56px', display: 'grid', gridTemplateColumns: '1fr auto 1fr', alignItems: 'center'}}>
         <a href="/" style={{display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none'}}>
-          <svg width="24" height="24" viewBox="0 0 24 24">
+          <svg width="28" height="28" viewBox="0 0 24 24">
             <circle cx="9" cy="12" r="7" fill="#E6F1FB" stroke="#185FA5" strokeWidth="1.5"/>
             <circle cx="15" cy="12" r="7" fill="#FAECE7" stroke="#993C1D" strokeWidth="1.5"/>
             <ellipse cx="12" cy="12" rx="2.5" ry="5" fill="#185FA5" fillOpacity="0.22"/>
           </svg>
-          <span style={{fontSize: '18px', fontWeight: 500, color: '#042C53', letterSpacing: '-0.5px'}}>ionic</span>
+          <span style={{fontSize: '22px', fontWeight: 500, color: '#042C53', letterSpacing: '-0.5px'}}>ionic</span>
         </a>
         <div style={{display: 'flex', gap: '32px', alignItems: 'center'}}>
           <a href="/how" style={{fontSize: '13px', color: '#042C53', fontWeight: 500, textDecoration: 'none'}}>How it works</a>

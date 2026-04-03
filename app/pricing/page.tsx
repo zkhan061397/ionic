@@ -41,13 +41,15 @@ export default function Pricing() {
 
         {/* Toggle */}
         <div style={{display: 'inline-flex', alignItems: 'center', gap: '12px', background: '#fff', border: '0.5px solid #E6F1FB', borderRadius: '20px', padding: '6px 16px'}}>
-          <span style={{fontSize: '13px', color: annual ? '#888780' : '#042C53', fontWeight: annual ? 400 : 500}}>Monthly</span>
-          <div onClick={() => setAnnual(!annual)} style={{width: '40px', height: '22px', borderRadius: '11px', background: annual ? '#185FA5' : '#B5D4F4', cursor: 'pointer', position: 'relative', transition: 'background 0.2s'}}>
-            <div style={{position: 'absolute', top: '3px', left: annual ? '21px' : '3px', width: '16px', height: '16px', borderRadius: '50%', background: '#fff', transition: 'left 0.2s'}}></div>
-          </div>
-          <span style={{fontSize: '13px', color: annual ? '#042C53' : '#888780', fontWeight: annual ? 500 : 400}}>Annual</span>
-          {annual && <span style={{fontSize: '11px', background: '#EAF3DE', color: '#27500A', padding: '2px 8px', borderRadius: '20px', fontWeight: 500}}>Save 35%</span>}
-        </div>
+  <span style={{fontSize: '13px', color: annual ? '#888780' : '#042C53', fontWeight: annual ? 400 : 500}}>Monthly</span>
+  <div onClick={() => setAnnual(!annual)} style={{width: '40px', height: '22px', borderRadius: '11px', background: annual ? '#185FA5' : '#B5D4F4', cursor: 'pointer', position: 'relative', transition: 'background 0.2s'}}>
+    <div style={{position: 'absolute', top: '3px', left: annual ? '21px' : '3px', width: '16px', height: '16px', borderRadius: '50%', background: '#fff', transition: 'left 0.2s'}}></div>
+  </div>
+  <span style={{fontSize: '13px', color: annual ? '#042C53' : '#888780', fontWeight: annual ? 500 : 400}}>Annual</span>
+  <div style={{width: '64px', display: 'flex', justifyContent: 'center'}}>
+    <span style={{fontSize: '11px', background: '#EAF3DE', color: '#27500A', padding: '2px 8px', borderRadius: '20px', fontWeight: 500, visibility: annual ? 'visible' : 'hidden', whiteSpace: 'nowrap'}}>Save 35%</span>
+  </div>
+</div>
       </section>
 
       {/* Pricing cards */}
