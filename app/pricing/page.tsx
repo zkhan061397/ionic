@@ -205,9 +205,9 @@ export default function Pricing() {
           <span style={{fontSize: '14px', fontWeight: 500, color: '#E6F1FB', letterSpacing: '-0.3px', whiteSpace: 'nowrap'}}>ionic</span>
         </div>
         <div style={{display: 'flex', gap: '24px'}}>
-          <a href="#" style={{fontSize: '13px', color: '#85B7EB', textDecoration: 'none'}}>Privacy</a>
-          <a href="#" style={{fontSize: '13px', color: '#85B7EB', textDecoration: 'none'}}>Terms</a>
-          <a href="#" style={{fontSize: '13px', color: '#85B7EB', textDecoration: 'none'}}>Contact</a>
+          <a href="/privacy" style={{fontSize: '13px', color: '#85B7EB', textDecoration: 'none'}}>Privacy</a>
+<a href="/terms" style={{fontSize: '13px', color: '#85B7EB', textDecoration: 'none'}}>Terms</a>
+<a href="/contact" style={{fontSize: '13px', color: '#85B7EB', textDecoration: 'none'}}>Contact</a>
         </div>
       </footer>
 
